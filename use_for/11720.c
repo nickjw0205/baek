@@ -5,13 +5,13 @@ int main(){
 
 	scanf("%d",&input);
 
-	int num[1][input];
+	char num[input+1];
 
-	scanf("%d",num[0]);
+	scanf("%s",num);
 
 	for(int i = 0;i < input;i++){
-		sum += num[0][i];
+		sum += num[i];
 	}
 
-	printf("%d\n",sum);
+	printf("%d\n",sum-48*input);
 }
