@@ -23,7 +23,6 @@ int main(){
 		}
 
 		average = sum/people;
-		printf("average = %f\n",average);
 		cnt = 0;
 
 		for(int j = 0;j < people;j++){
@@ -35,7 +34,6 @@ int main(){
 		percentage[i] = (cnt/people) * 100;
 		
 		cnt = 0;
-		printf("-------------\n");
 	}
 	for(int r = 0;r < casenum;r++){
 		printf("%0.3f%%\n", percentage[r]);
