@@ -18,7 +18,6 @@ int main(){
 		number[i] = i+1;
 	}
 
-
 	for(int i = 0;i < 10;i++){
 		if((multi_clone / (pow(10,i))) > 1){
 			len += 1;
