@@ -7,26 +7,29 @@ int main(){
 	char x = 'X';
 	int input, len, result = 0;
 	int cnt = 1;
+	int plus = 2;
 
 	scanf("%d",&input);
 	for(int i = 0;i < input;i++){
 
 		scanf("%s",str);
 		len = strlen(str);
-		for(int j = 0;j < len;j++){
-			if(strcmp(str+j,&o) == 0)	{
-				result += cnt;
-				printf("j = %d\n, cnt = %d",j,cnt);
-				cnt += 1;
+		for(int j = 0;j < len; j++){
+
+			if(str[j] == 'O'){
+				if(str[j-1] == 'O'){
+					result += plus;
+					plus += 1;
+				}
+				else{
+					plus = 2;
+					result += 1;
+				}
 			}
-			else{
-				cnt = 1;
-			}
+
 		}
 		printf("%d\n", result);
 		result = 0;
+
 	}
-
-
-
 }
